@@ -32,7 +32,7 @@ input {
 .containerLeft {
     width: 35%;
     height: 100%;
-    background-image: url('./images/bg-main-desktop.png');
+    background-image: url('./bg-main-desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -67,7 +67,7 @@ input {
     margin-right: 200px;
     margin-bottom: 50px;
     border-radius: 10px;
-    background: url(./images/bg-card-front.png);
+    background: url('./bg-card-front.png');
     background-size: cover;
     box-shadow: 10px 20px 800px rgba(0, 0, 0, 0.3);
 }
@@ -178,7 +178,7 @@ input::placeholder {
     min-height: 240px;
     background-size: cover;
     box-shadow: 50px 50px 800px rgba(0, 0, 0, 0.3);
-    background: url(./images/bg-card-back.png);
+    background: url('./bg-card-back.png');
 }
 
 .cardBack input {
