@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+    font-optical-sizing: auto;
+
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input {
+    border-radius: 10px;
+}
+
+
+.containerMain {
+    width: 100vw;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.containerLeft {
+    flex: 0 0 30%;
+    background-image: url('./images/bg-main-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.cards {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 15%; /* Aquí ajustas la posición izquierda del overlay */
+    width: 30%; /* Aquí ajustas el ancho del overlay */
+    height: 100%;
+ /* Color de fondo con transparencia */
+    z-index: 1;
+}
+.containerRight {
+    flex: 1;
+ 
+    display: flex;
+    background-color: white;
+    position: relative;
+}
+
+.cardFront {
+    display: inline-block;
+    width: 440px;
+    height: 240px;
+    min-height: 240px;
+    z-index: 500;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: url(./images/bg-card-front.png);
+    background-size: cover;
+    box-shadow: 10px 20px 800px rgba(0, 0, 0, 0.3);
+}
+
+.laimagen {
+    display: block;
+    width: 0;
+}
+
+.cardFront input {
+    position: relative;
+    z-index: 1;
+}
+
+.inputContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.inputContainer input {
+    background: none;
+    border: none;
+    outline: none;
+    pointer-events: none;
+    user-select: none;
+
+}
+
+.inputTop {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    top: 0;
+
+}
+
+.inputTop img {
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 45px;
+}
+
+.inputBot {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tarjetaNumbers {
+
+    width: 100%;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+.tarjetaNames {
+
+    width: 210px;
+    height: 20px;
+    margin: 0 0 0 20px;
+    text-align: left;
+    color: white;
+}
+.tarjetaDateContainer{
+    display: flex;
+    color: white;
+    width: 100px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.tarjetaDate { 
+    width: 20px;
+    text-align: center;
+    color: white;
+}
+
+.cardBack {
+    display: inline-block;
+    width: 440px;
+    height: 240px;
+    z-index: 600;
+    border-radius: 10px;
+    min-height: 240px;
+    background-size: cover;
+    box-shadow: 50px 50px 800px rgba(0, 0, 0, 0.3);
+    background: url(./images/bg-card-back.png);
+}
+
+.cardBack input {
+    background: none;
+    border: none;
+    outline: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+.cvc {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.cvc input {
+    width: 80px;
+    color: white;
+}
+
+
+
+.containerRight input {
+    outline: none;
+}
+
+.form {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    z-index: 5000;
+    height: 400px;
+    font-size: 18px;
+}
+
+.form input {
+    border: 1px rgb(207, 207, 207) solid;
+    border-radius: 5px;
+    padding: 10px;
+    height: 45px;
+    font-size: 14px;
+}
+
+.form input::placeholder {
+    color: #cfcbcb !important;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inputs span {
+    margin: 20px 0 20px 0;
+}
+
+.dateInputs {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.dateInputs span {
+    margin: 20px 0 20px 0;
+}
+
+.textDateInputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dateInputs input {
+    width: 48%;
+    height: 45px;
+    text-align: center;
+
+}
+
+#not {
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inputs2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 0 20px 0;
+    cursor: pointer;
+    background: rgb(34 9 48);
+    color: white;
+    transition: 0.4s all ;
+}
+button:hover{
+    background-color: rgb(76, 19, 109);
+}
+button:active{
+    background-color: rgb(34, 9, 48);
+}
+
+
+
+@media (max-width: 1230px) {
+    .containerMain {
+        flex-direction: column;
+    }
+
+
+    .cards{
+        left: 35%;
+        top:-20%;
+    }
+
+    .cardFront {
+        z-index: 5000;
+        position: absolute;
+        margin-right: 50px;
+        margin-top: 160px;
+        background-image: none;
+    }
+    .laimagen{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .cardBack {
+        position: relative;
+        z-index: 600;
+        margin-left: 50px;
+        margin-bottom: 165px;
+
+    }
+    .containerRight {
+        margin-top: 200px;
+    }
+   
+}
+@media(max-width: 700px){
+   
+    .cards{
+        top: 0;
+        height: 60%;
+    }
+    .cardFront {
+        z-index: 5000;
+        position: absolute;
+        margin-top: 0;
+        margin-right: 0;
+        width: 340px;
+        height: 200px !important;
+        min-height: 200px;
+        margin-bottom: 0;
+        background-image: none;
+    }
+    .tarjetaNumbers {
+
+        width: 100%;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+    
+    .tarjetaNames {
+        font-size: 12px;  
+    }
+    
+    .tarjetaDate {
+        font-size: 12px;  
+    }
+    .laimagen{
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    .cardBack{
+        width: 340px;
+        height: 200px !important;
+        min-height: 200px;
+      
+        margin-left: 80px;
+    }
+    .containerRight {
+        margin-top: 100px;
+    }
+}
